@@ -94,6 +94,8 @@ class SignUpViewController: UIViewController {
                 }
                 else {
                     
+                    Auth.auth().currentUser?.sendEmailVerification()
+                    
                     let db = Firestore.firestore()
                     
                     db.collection("users").addDocument(data: ["firstname": FirstName, "lastname": LastName,"username": UserName, "uid": result!.user.uid]) { (error) in
