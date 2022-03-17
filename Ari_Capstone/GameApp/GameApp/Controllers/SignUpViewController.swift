@@ -84,11 +84,11 @@ class SignUpViewController: UIViewController {
             let FirstName = FName.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let LastName = LName.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let UserName = UName.text!.trimmingCharacters(in: .whitespacesAndNewlines)
-            let Email = Email.text!.trimmingCharacters(in: .whitespacesAndNewlines)
+            let email = Email.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             let Password = PWord.text!.trimmingCharacters(in: .whitespacesAndNewlines)
             
             
-            Auth.auth().createUser(withEmail: Email, password: Password) { (result,err) in
+            Auth.auth().createUser(withEmail: email, password: Password) { (result,err) in
                 if err != nil {
                     self.showError("Error creating user")
                 }

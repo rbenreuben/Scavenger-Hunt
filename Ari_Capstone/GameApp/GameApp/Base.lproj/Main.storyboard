@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WZF-9J-XuD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WZF-9J-XuD">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -135,9 +135,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHr-1e-lNU">
-                                <rect key="frame" x="152" y="589" width="111" height="31"/>
+                                <rect key="frame" x="152" y="756" width="111" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="111" id="ChL-Te-CkR"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
                                 <connections>
                                     <action selector="logOutPressed:" destination="uXg-ba-dmV" eventType="touchUpInside" id="c16-47-E2t"/>
                                 </connections>
@@ -154,22 +156,50 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jBs-05-tch">
+                                <rect key="frame" x="159" y="115" width="97" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tfp-pG-2VP">
+                                <rect key="frame" x="187" y="174" width="41" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Finish"/>
+                                <connections>
+                                    <action selector="generateQR:" destination="uXg-ba-dmV" eventType="touchUpInside" id="bDN-Cq-FqW"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZZB-mb-sEW">
+                                <rect key="frame" x="20" y="221" width="374" height="374"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJY-MC-RLd">
+                                <rect key="frame" x="149" y="644" width="100" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Print"/>
+                                <connections>
+                                    <action selector="printQR:" destination="uXg-ba-dmV" eventType="touchUpInside" id="rye-F9-cOr"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HWW-90-wxo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="FHr-1e-lNU" firstAttribute="leading" secondItem="HWW-90-wxo" secondAttribute="leading" constant="152" id="3le-VE-rfc"/>
+                            <constraint firstItem="HWW-90-wxo" firstAttribute="bottom" secondItem="FHr-1e-lNU" secondAttribute="bottom" constant="76" id="SRa-oF-25c"/>
                             <constraint firstItem="qOe-Gu-fZr" firstAttribute="top" secondItem="HWW-90-wxo" secondAttribute="top" constant="20" id="VAQ-pw-gaz"/>
                             <constraint firstItem="HWW-90-wxo" firstAttribute="trailing" secondItem="FHr-1e-lNU" secondAttribute="trailing" constant="151" id="WJo-1a-4cc"/>
                             <constraint firstItem="oq0-mU-izq" firstAttribute="top" secondItem="HWW-90-wxo" secondAttribute="top" constant="20" id="cEE-7Y-Ra1"/>
                             <constraint firstItem="qOe-Gu-fZr" firstAttribute="leading" secondItem="oq0-mU-izq" secondAttribute="trailing" constant="46" id="fVC-op-8dv"/>
-                            <constraint firstItem="HWW-90-wxo" firstAttribute="bottom" secondItem="FHr-1e-lNU" secondAttribute="bottom" constant="242" id="vum-Xa-09v"/>
                             <constraint firstItem="oq0-mU-izq" firstAttribute="leading" secondItem="HWW-90-wxo" secondAttribute="leading" constant="20" id="wnE-Cd-FrC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Jje-oB-ycd"/>
                     <connections>
                         <outlet property="UserN" destination="qOe-Gu-fZr" id="WAg-c8-4fi"/>
+                        <outlet property="clue" destination="jBs-05-tch" id="Ind-C3-8Ra"/>
+                        <outlet property="qrCode" destination="ZZB-mb-sEW" id="VP1-c5-41Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNS-Ys-fR8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
