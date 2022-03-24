@@ -1,35 +1,19 @@
 //
-//  HomeScreenViewController.swift
+//  JoinViewController.swift
 //  GameApp
 //
-//  Created by Daniel Garcia on 2/17/22.
+//  Created by Daniel Garcia on 3/24/22.
 //
 
 import UIKit
-import FirebaseAuth
 
-class HomeScreenViewController: UIViewController {
+class JoinViewController: UIViewController {
 
-    @IBOutlet weak var UserN: UILabel!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
-        guard let Uname = Auth.auth().currentUser?.email else { return }
-        UserN.text = Uname
-        
     }
-    
-    @IBAction func logOutPressed(_ sender: Any) {
-        do {
-            try Auth.auth().signOut()
-        } catch let error as NSError {
-            print("Error signing out: %@", error)
-        }
-    }
-    
     
 
     /*
