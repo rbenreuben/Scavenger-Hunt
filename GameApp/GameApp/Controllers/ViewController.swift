@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var SignUp: UIButton!
     @IBOutlet weak var Login: UIButton!
     
+    @IBOutlet weak var Join: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +22,8 @@ class ViewController: UIViewController {
     func setUpElements() {
         Utilities.styleFilledButton(SignUp)
         Utilities.styleHollowButton(Login)
+        Utilities.styleHollowButton(Join)
+
     }
 }
 

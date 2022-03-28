@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>743097906224-2l7c3aq8icnopq7jf78g47trdilar773.apps.googleusercontent.com</string>
+	<string>365548477394-rj54ifohh9dta0avbcltbincs0sd0332.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.743097906224-2l7c3aq8icnopq7jf78g47trdilar773</string>
+	<string>com.googleusercontent.apps.365548477394-rj54ifohh9dta0avbcltbincs0sd0332</string>
 	<key>API_KEY</key>
-	<string>AIzaSyCJGBZ0dYGHOAWCrEgvIAajkQ-CuMbeesY</string>
+	<string>AIzaSyDu-8-ddSLaFNsyCRxCChecea2EG5wIhfU</string>
 	<key>GCM_SENDER_ID</key>
-	<string>743097906224</string>
+	<string>365548477394</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>Daniel.GameApp</string>
+	<string>Manhattan-College.Scavenger-Hunt</string>
 	<key>PROJECT_ID</key>
-	<string>scavengergame-e512b</string>
+	<string>scavenger-hunt-8d4db</string>
 	<key>STORAGE_BUCKET</key>
-	<string>scavengergame-e512b.appspot.com</string>
+	<string>scavenger-hunt-8d4db.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:743097906224:ios:a047cbcc46e7cc9c4629f5</string>
+	<string>1:365548477394:ios:70f01794cafdee21b5460b</string>
+	<key>DATABASE_URL</key>
+	<string>https://scavenger-hunt-8d4db-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

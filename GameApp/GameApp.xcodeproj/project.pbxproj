@@ -17,11 +17,15 @@
 		95CF9F4727BEB455000BE280 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95CF9F4527BEB455000BE280 /* LaunchScreen.storyboard */; };
 		95CF9F5227BEB455000BE280 /* GameAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CF9F5127BEB455000BE280 /* GameAppTests.swift */; };
 		95CF9F5D27BEB455000BE280 /* GameAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CF9F5C27BEB455000BE280 /* GameAppUITests.swift */; };
-		95CF9F6B27BEB55F000BE280 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 95CF9F6A27BEB55F000BE280 /* GoogleService-Info.plist */; };
 		95CF9F6D27BEE913000BE280 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CF9F6C27BEE913000BE280 /* SignUpViewController.swift */; };
 		95CF9F6F27BEE926000BE280 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CF9F6E27BEE926000BE280 /* LoginViewController.swift */; };
 		95CF9F7127BEE94C000BE280 /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CF9F7027BEE94C000BE280 /* HomeScreenViewController.swift */; };
 		95CF9F7427C3FBCF000BE280 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CF9F7327C3FBCF000BE280 /* Utilities.swift */; };
+		E429939627E3A18300F1FE50 /* JoinCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429939527E3A18300F1FE50 /* JoinCodeViewController.swift */; };
+		E429939A27E90B8D00F1FE50 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E429939927E90B8C00F1FE50 /* GoogleService-Info.plist */; };
+		E429939C27E910E700F1FE50 /* JoinedScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429939B27E910E700F1FE50 /* JoinedScreenViewController.swift */; };
+		E42993A027ECE2B700F1FE50 /* gameInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E429939F27ECE2B700F1FE50 /* gameInformation.swift */; };
+		E4DDAB4B27F245CA00743F2A /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DDAB4A27F245CA00743F2A /* GamePlayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,12 +63,16 @@
 		95CF9F5827BEB455000BE280 /* GameAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		95CF9F5C27BEB455000BE280 /* GameAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameAppUITests.swift; sourceTree = "<group>"; };
 		95CF9F5E27BEB455000BE280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		95CF9F6A27BEB55F000BE280 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		95CF9F6C27BEE913000BE280 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		95CF9F6E27BEE926000BE280 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		95CF9F7027BEE94C000BE280 /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		95CF9F7327C3FBCF000BE280 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		A45E48B7A809E44D51E40C3A /* Pods-GameApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameApp.debug.xcconfig"; path = "Target Support Files/Pods-GameApp/Pods-GameApp.debug.xcconfig"; sourceTree = "<group>"; };
+		E429939527E3A18300F1FE50 /* JoinCodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinCodeViewController.swift; sourceTree = "<group>"; };
+		E429939927E90B8C00F1FE50 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E429939B27E910E700F1FE50 /* JoinedScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinedScreenViewController.swift; sourceTree = "<group>"; };
+		E429939F27ECE2B700F1FE50 /* gameInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameInformation.swift; sourceTree = "<group>"; };
+		E4DDAB4A27F245CA00743F2A /* GamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +141,7 @@
 				95CF9F4027BEB453000BE280 /* Main.storyboard */,
 				95CF9F4327BEB455000BE280 /* Assets.xcassets */,
 				95CF9F4527BEB455000BE280 /* LaunchScreen.storyboard */,
-				95CF9F6A27BEB55F000BE280 /* GoogleService-Info.plist */,
+				E429939927E90B8C00F1FE50 /* GoogleService-Info.plist */,
 				95CF9F4827BEB455000BE280 /* Info.plist */,
 			);
 			path = GameApp;
@@ -164,6 +172,9 @@
 				95CF9F6C27BEE913000BE280 /* SignUpViewController.swift */,
 				95CF9F6E27BEE926000BE280 /* LoginViewController.swift */,
 				95CF9F3E27BEB453000BE280 /* ViewController.swift */,
+				E429939B27E910E700F1FE50 /* JoinedScreenViewController.swift */,
+				E429939527E3A18300F1FE50 /* JoinCodeViewController.swift */,
+				E4DDAB4A27F245CA00743F2A /* GamePlayViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -173,6 +184,7 @@
 			children = (
 				95CF9F7327C3FBCF000BE280 /* Utilities.swift */,
 				95CB82BC27C433A400930678 /* Constants.swift */,
+				E429939F27ECE2B700F1FE50 /* gameInformation.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -292,8 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				95CF9F4727BEB455000BE280 /* LaunchScreen.storyboard in Resources */,
-				95CF9F6B27BEB55F000BE280 /* GoogleService-Info.plist in Resources */,
 				95CF9F4427BEB455000BE280 /* Assets.xcassets in Resources */,
+				E429939A27E90B8D00F1FE50 /* GoogleService-Info.plist in Resources */,
 				95CF9F4227BEB453000BE280 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,9 +377,13 @@
 				95CF9F3B27BEB453000BE280 /* AppDelegate.swift in Sources */,
 				95CF9F7427C3FBCF000BE280 /* Utilities.swift in Sources */,
 				95CF9F6D27BEE913000BE280 /* SignUpViewController.swift in Sources */,
+				E429939627E3A18300F1FE50 /* JoinCodeViewController.swift in Sources */,
 				95CF9F6F27BEE926000BE280 /* LoginViewController.swift in Sources */,
+				E429939C27E910E700F1FE50 /* JoinedScreenViewController.swift in Sources */,
+				E42993A027ECE2B700F1FE50 /* gameInformation.swift in Sources */,
 				95CF9F3D27BEB453000BE280 /* SceneDelegate.swift in Sources */,
 				95CF9F7127BEE94C000BE280 /* HomeScreenViewController.swift in Sources */,
+				E4DDAB4B27F245CA00743F2A /* GamePlayViewController.swift in Sources */,
 				95CB82BD27C433A400930678 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,7 +564,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B78X8Q83BT;
 				INFOPLIST_FILE = GameApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -569,7 +585,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B78X8Q83BT;
 				INFOPLIST_FILE = GameApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
