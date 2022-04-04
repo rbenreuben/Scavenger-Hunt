@@ -1,10 +1,3 @@
-//
-//  LoginViewController.swift
-//  GameApp
-//
-//  Created by Daniel Garcia on 2/17/22.
-//
-
 import UIKit
 import Firebase
 import FirebaseAuth
@@ -44,7 +37,7 @@ class LoginViewController: UIViewController {
                 self.Error.alpha = 1
             }
             else {
-                let HVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeVC) as? HomeScreenViewController
+                let HVC = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeVC) as? CreateGameViewController
                 
                 self.view.window?.rootViewController = HVC
                 self.view.window?.makeKeyAndVisible()

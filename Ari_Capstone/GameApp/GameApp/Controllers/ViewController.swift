@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  GameApp
-//
-//  Created by Daniel Garcia on 2/17/22.
-//
-
 import UIKit
 
 class ViewController: UIViewController {

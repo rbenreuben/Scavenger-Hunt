@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		195D38AF9AEA9058C4F67609 /* Pods_GameApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE7F76B87CA9CA7AA82B7DB /* Pods_GameApp.framework */; };
+		5154961E27FA26A2007B2141 /* DetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5154961D27FA26A2007B2141 /* DetailTableViewController.swift */; };
+		515AA07627FB7DA400D4BDDC /* CreateGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515AA07527FB7DA400D4BDDC /* CreateGameViewController.swift */; };
 		515B333D27D6B09F0031E6D3 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 515B333C27D6B09F0031E6D3 /* GoogleService-Info.plist */; };
 		95CB82BD27C433A400930678 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CB82BC27C433A400930678 /* Constants.swift */; };
 		95CF9F3B27BEB453000BE280 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CF9F3A27BEB453000BE280 /* AppDelegate.swift */; };
@@ -43,6 +45,8 @@
 
 /* Begin PBXFileReference section */
 		140A89CCD076D7E161A83993 /* Pods-GameApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GameApp.release.xcconfig"; path = "Target Support Files/Pods-GameApp/Pods-GameApp.release.xcconfig"; sourceTree = "<group>"; };
+		5154961D27FA26A2007B2141 /* DetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewController.swift; sourceTree = "<group>"; };
+		515AA07527FB7DA400D4BDDC /* CreateGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameViewController.swift; sourceTree = "<group>"; };
 		515B333C27D6B09F0031E6D3 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6FE7F76B87CA9CA7AA82B7DB /* Pods_GameApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GameApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		95CB82BC27C433A400930678 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -160,10 +164,12 @@
 		95CF9F7227BEE981000BE280 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				95CF9F7027BEE94C000BE280 /* HomeScreenViewController.swift */,
+				95CF9F3E27BEB453000BE280 /* ViewController.swift */,
 				95CF9F6C27BEE913000BE280 /* SignUpViewController.swift */,
 				95CF9F6E27BEE926000BE280 /* LoginViewController.swift */,
-				95CF9F3E27BEB453000BE280 /* ViewController.swift */,
+				95CF9F7027BEE94C000BE280 /* HomeScreenViewController.swift */,
+				5154961D27FA26A2007B2141 /* DetailTableViewController.swift */,
+				515AA07527FB7DA400D4BDDC /* CreateGameViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -364,6 +370,8 @@
 				95CF9F3F27BEB453000BE280 /* ViewController.swift in Sources */,
 				95CF9F3B27BEB453000BE280 /* AppDelegate.swift in Sources */,
 				95CF9F7427C3FBCF000BE280 /* Utilities.swift in Sources */,
+				5154961E27FA26A2007B2141 /* DetailTableViewController.swift in Sources */,
+				515AA07627FB7DA400D4BDDC /* CreateGameViewController.swift in Sources */,
 				95CF9F6D27BEE913000BE280 /* SignUpViewController.swift in Sources */,
 				95CF9F6F27BEE926000BE280 /* LoginViewController.swift in Sources */,
 				95CF9F3D27BEB453000BE280 /* SceneDelegate.swift in Sources */,

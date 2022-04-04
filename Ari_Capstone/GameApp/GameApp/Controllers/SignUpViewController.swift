@@ -1,10 +1,3 @@
-//
-//  SignUpViewController.swift
-//  GameApp
-//
-//  Created by Daniel Garcia on 2/17/22.
-//
-
 import UIKit
 import FirebaseAuth
 import Firebase
@@ -98,7 +91,7 @@ class SignUpViewController: UIViewController {
                     
                     let db = Firestore.firestore()
                     
-                    db.collection("users").addDocument(data: ["firstname": FirstName, "lastname": LastName,"username": UserName, "uid": result!.user.uid]) { (error) in
+                    db.collection("users").addDocument(data: ["firstname": FirstName, "lastname": LastName,"username": UserName, "uid": result!.user.uid,"email": email]) { (error) in
                         
                         if error != nil {
                             self.showError("Error saving user data")
@@ -117,7 +110,7 @@ class SignUpViewController: UIViewController {
     
     func transitionToHome(){
         
-        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeVC) as? HomeScreenViewController
+        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeVC) as? CreateGameViewController
         
         view.window?.rootViewController = homeViewController
         view.window?.makeKeyAndVisible()
