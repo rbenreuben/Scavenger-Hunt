@@ -3,9 +3,89 @@ import FirebaseAuth
 import Firebase
 
 class HomeScreenViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
-    @IBOutlet weak var UserN: UILabel!
     
+    
+    @IBAction func finishButtonPressed(_ sender: Any) {
+        
+        let db = Firestore.firestore()
+        
+        for (index, val) in arrayDesc.enumerated(){
+            let cellNum = String((tableView.visibleCells[index].textLabel?.text)!)
+            db.collection("pracCurrentGames").document("bA6").collection("clues").document(cellNum)
+                .setData([
+                "description": val])
+        }
+        
+        /*print(tableView.visibleCells.count)*/
+      
+        for cell in tableView.visibleCells {
+            let cellNum = String((cell.textLabel?.text)!)
+            db.collection("pracCurrentGames").document("bA6").collection("clues").document(cellNum)
+                .updateData([
+                "howManySolves":"0",
+                "name": cellNum])
+        }
+        
+        
+       
+        
+        /*
+        for val in arrayImage{
+            print(val)
+            print(String(val.textLabel?.text)!)
+        }
+        */
+        
+        /*
+        for (index, val) in arrayImage.enumerated(){
+            print(index)
+            print(arrayImage[index])
+        }
+        */
+        
+        /*
+        var pracArray = [String]()
+        for val in 1...3{
+            pracArray.append(String(val))
+            print(val)
+        }
+        */
+        
+        
+        
+        
+        /*
+        db.collection("mail").document("example").setData([
+            "to": Auth.auth().currentUser?.email,
+            "message": [
+                "subject": "Scavenger Hunt App QR Codes!",
+                "html": "This is an <code>HTML</code> email body.",
+                "attachments": [
+                    [
+                    "content": arrayImage[0]!.jpegData(compressionQuality: 0.5)!,
+                    "filename": "attachment.jpg",
+                    "type": "application/jpg",
+                    "disposition": "attachment"
+                    ],
+                    [
+                    "content": arrayImage[1]!.jpegData(compressionQuality: 0.5)!,
+                    "filename": "attachment2.jpg",
+                    "type": "application/jpg",
+                    "disposition": "attachment"
+                    ]
+                ]
+            ]
+        ])
+        */
+        
+        
+        
+        
+    }
+    
+    
+    
+    /*
     @IBAction func logOutPressed(_ sender: Any) {
         do {
             try Auth.auth().signOut()
@@ -13,8 +93,7 @@ class HomeScreenViewController: UIViewController, UITableViewDelegate, UITableVi
             print(error.localizedDescription)
         }
     }
-    
- 
+    */
     
     
     
@@ -80,7 +159,6 @@ class HomeScreenViewController: UIViewController, UITableViewDelegate, UITableVi
         printController.present(animated: true, completionHandler: nil)
     }
     */
-    
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -149,6 +227,8 @@ class HomeScreenViewController: UIViewController, UITableViewDelegate, UITableVi
         
         return cell
     }
+    
+    
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete && indexPath.row != 0 {

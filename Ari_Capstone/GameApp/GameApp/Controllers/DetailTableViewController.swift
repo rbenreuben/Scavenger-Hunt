@@ -1,10 +1,3 @@
-//
-//  DetailTableViewController.swift
-//  GameApp
-//
-//  Created by Alma Zaravelis on 4/3/22.
-//
-
 import UIKit
 
 class DetailTableViewController: UITableViewController {
